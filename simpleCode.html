@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySite-end</title>
+    <script async defer src="simpleJS.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>
+        my notes
+    </h1>
+</header>
+
+<main id="notes" class="main">
+
+    <aside class="sideBar">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">
+                    home
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    pinned
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    help
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <form id="noteForm">
+        <div>
+            <label for="noteTitle">
+                Title:
+                <input id="noteTitle" name="noteTitle"/>
+            </label></div>
+        <div>
+            <label for="noteText">
+                Text:
+                <input id="noteText" name="noteText"/>
+            </label></div>
+        <div>
+            <button id="createNoteBtn">create note</button>
+        </div>
+    </form>
+
+    <div>
+
+    </div>
+</main>
+<div>
+</div>
+</body>
+</html>
