@@ -146,7 +146,8 @@ function renderAllNotes(){
 function renderNote(note){
     const node = document.createElement('div')
 
-    node.innerHTML = '<h2>' + note.id + '. ' + note.title + '</h2><p>' + note.text + '</p>'
+    node.classList.add('note')
+    node.innerHTML = '<h2 class="note__title">' + note.id + '. ' + note.title + '</h2><p class="note__text">' + note.text + '</p>'
 
     return node
 }

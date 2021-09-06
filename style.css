@@ -20,7 +20,7 @@ html{
     border-bottom-style: solid;
     border-bottom-width: 2px;
 
-    background-color: #fff252;
+    background-color: rgba(255, 242, 82, 0.05);
 }
 
 body {
@@ -36,16 +36,44 @@ body {
     left: 0;
     bottom: 0;
     top: 72px;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .main{
+    display: flex;
+    flex-wrap: wrap;
+
     padding-top: 10px;
     padding-left: 10px;
 
     margin-left: 120px;
     margin-top: 72px;
 
-    background-color: aquamarine;
+    background-color: rgba(0, 255, 58, 0.05);
+}
+
+/*junk*/
+/*.notes {*/
+/*    margin-top: 32px;*/
+
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+.note-button{
+    margin-bottom: 20px;
+}
+
+.note{
+    flex-shrink: 0;
+    flex-basis: 25%;
+
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .menu{
@@ -83,5 +111,5 @@ body {
 }
 
 .menu__link.menu__link--active{
-    background-color: yellow;
+    background-color: rgba(255, 251, 5, 0.5);
 }
