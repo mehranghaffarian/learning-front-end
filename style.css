@@ -35,7 +35,7 @@ body {
 
     background-color: white;
 
-    width: 120px;
+    width: 180px;
 
     left: 0;
     bottom: 0;
@@ -51,7 +51,7 @@ body {
     padding-top: 10px;
     padding-left: 10px;
 
-    margin-left: 120px;
+    margin-left: 180px;
     margin-top: 72px;
 }
 
@@ -63,8 +63,9 @@ body {
 /*    flex-wrap: wrap;*/
 /*}*/
 
-.note-form{
-    margin-bottom: 20px;
+.note-form {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .note{
@@ -189,5 +190,32 @@ body {
 }
 
 .btn:active{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+@media (min-width: 576px) {
+    .card {
+        flex-basis: calc(50% - 8px);
+    }
+    .wrapper {
+        margin-left: 300px;
+    }
+    .sidebar {
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-basis: calc(33% - 10px);
+    }
+
+    .note-form {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .card {
+        flex-basis: calc(25% - 12px);
+    }
 }
