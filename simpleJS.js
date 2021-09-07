@@ -163,6 +163,9 @@ function handleSubmit(e){
     let title = document.getElementById('noteTitle').value
     let text = document.getElementById('noteText').value
 
+    document.getElementById('noteText').value = ""
+    document.getElementById('noteTitle').value = ""
+
     document.getElementById('notes').append(renderNote(createNote(title, text)))
 
 }

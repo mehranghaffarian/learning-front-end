@@ -8,8 +8,12 @@ html{
 
     top: 0;
 
+    background-color: white;
+
     height: 50px;
     width: 100%;
+
+    text-transform: capitalize;
 
     padding-bottom: 20px;
     padding-left: 20px;
@@ -19,8 +23,6 @@ html{
     border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-
-    background-color: rgba(255, 242, 82, 0.05);
 }
 
 body {
@@ -30,6 +32,8 @@ body {
 
 .sideBar{
     position: fixed;
+
+    background-color: white;
 
     width: 120px;
 
@@ -49,8 +53,6 @@ body {
 
     margin-left: 120px;
     margin-top: 72px;
-
-    background-color: rgba(0, 255, 58, 0.05);
 }
 
 /*junk*/
@@ -61,19 +63,19 @@ body {
 /*    flex-wrap: wrap;*/
 /*}*/
 
-.note-button{
+.note-form{
     margin-bottom: 20px;
 }
 
 .note{
     flex-shrink: 0;
-    flex-basis: 25%;
+    flex-basis: 15%;
 
     margin-right: 5px;
     margin-bottom: 5px;
 
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 .menu{
@@ -112,4 +114,80 @@ body {
 
 .menu__link.menu__link--active{
     background-color: rgba(255, 251, 5, 0.5);
+}
+
+.note__title{
+    margin: 5px;
+
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.note__text{
+    font-size: 10px;
+    padding-left: 8px;
+}
+
+.note-form{
+    width: 100%;
+    margin: 0 400px;
+}
+
+.form__label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+
+    padding: 8px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    outline: none;
+}
+
+.form__input:focus{
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 5px 8px rgba(0, 0, 255, 0.5);
+}
+
+.btn{
+    padding: 8px 16px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    outline: none;
+
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.btn:focus{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn:active{
+    background-color: rgba(0, 0, 0, 0.4);
 }

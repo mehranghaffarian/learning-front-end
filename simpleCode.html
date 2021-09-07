@@ -16,6 +16,21 @@
 
 <main id="notes" class="main">
 
+    <form id="noteForm" class="note-form">
+        <div>
+            <label for="noteTitle" class="form__label">
+                Title:
+            </label>
+            <input id="noteTitle" name="noteTitle" class="form__input"/>
+        </div>
+        <div>
+            <label for="noteText" class="form__label">
+                Text:
+            </label>
+            <input id="noteText" name="noteText" class="form__input"/>
+        </div>
+        <button id="createNoteBtn" class="btn">create note</button>
+    </form>
     <aside class="sideBar">
         <ul class="menu">
             <li class="menu__item">
@@ -35,19 +50,6 @@
             </li>
         </ul>
     </aside>
-    <form id="noteForm" class="note-button">
-            <label for="noteTitle">
-                Title:
-                <input id="noteTitle" name="noteTitle"/>
-            </label>
-            <label for="noteText">
-                Text:
-                <input id="noteText" name="noteText"/>
-            </label>
-            <button id="createNoteBtn">create note</button>
-    </form>
 </main>
-<div>
-</div>
 </body>
 </html>
